@@ -1,0 +1,66 @@
+    1  ps ax | grep dockerd
+    2  ps ax | grep containerd
+    3  clear
+    4  docker info
+    5  ls /var/lib/docker
+    6  clear
+    7  docker search httpd
+    8  docker system df
+    9  docker pull httpd
+   10  docker images
+   11  docker inspect ccb
+   12  docker pull oraclelinux:8
+   13  docker images
+   14  docker history httpd
+   15  docker history de3
+   16  docker inspect oraclelinux:8
+   17  docker history de3
+   18  docker history httpd
+   19  clear
+   20  docker images
+   21  docker network ls
+   22  docker ps -a
+   23  docker images
+   24  docker create --name TestApache httpd
+   25  docker ps -a
+   26  docker inspect TestApache
+   27  docker start TestApache
+   28  docker ps -a
+   29  docker inspect TestApache
+   30  docker ps -ax
+   31  docker ps ax
+   32  docker top TestApache
+   33  ps ax | grep 3989
+   34  docker logs TestApache
+   35  docker inspect httpd
+   36  clear
+   37  docker ps -a
+   38  docker exec TestApache ls /usr/local/apache2/htdocs
+   39  docker exec TestApache ls /usr/local/apache2
+   40  docker exec TestApache cat /usr/local/apache2/htdocs/index.html
+   41  docker exec TestApache bash
+   42  docker exec -i -t TestApache bash
+   43  docker ps -a
+   44  docker create --name TestOL oraclelinux:8
+   45  docker start TestOL
+   46  docker ps -a 
+   47  docker rm TestOL
+   48  docker create --name TestOL -i -t oraclelinux:8
+   49  docker start TestOL
+   50  docker ps -a
+   51  docker top TestOL
+   52  ps ax | grep 4594
+   53  docker exec -i -t TestOL bash
+   54  docker ps
+   55  docker attach TestOL
+   56  docker ps -a
+   57  docker logs TestOL
+   58  docker start TestOL
+   59  docker ps -a
+   60  docker attach --detach-keys="ctrl-u" TestOL
+   61  docker ps -a
+   62  docker stats
+   63  docker stop TestOL
+   64  docker exec -i -t TestOL bash
+   65  history > /c/Users/dhana/command_history0607
+   66  history > /c/Users/91912/command_history0607
